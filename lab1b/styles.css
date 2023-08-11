@@ -1,0 +1,30 @@
+.button-wrapper {
+    padding: 10px 20px;
+    background-color: #A18FC4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#file-input-btn {
+    padding: 10px 20px;
+    background-color: #A18FC4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: left;
+    color: #4A2E7F;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

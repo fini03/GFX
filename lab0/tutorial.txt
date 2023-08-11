@@ -1,0 +1,4 @@
+WebGL Tutorial: https://webglfundamentals.org/webgl/lessons/webgl-fundamentals.html
+
+
+For example the line "webglUtils.resizecanvasToDisplaySize(gl.canvas);" is not well explained in terms of what it excatly does and why it's needed. Another improvement could be the explanation of stride since it's not clear what the definition is.
