@@ -119,6 +119,7 @@ class Shape {
         // Matrix transformations are read from right to left:
         // positionTranslationMatrix * rotationTranslationMatrix * scalingMatrix
         if (!isCoordSystem) {
+            console.log(this.#boundingBoxTransform);
             glm.mat4.multiply(modelMatrix, this.#boundingBoxTransform, modelMatrix); // Bounding box centering/scaling
         }
 

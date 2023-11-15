@@ -1,7 +1,5 @@
 import * as glm from './gl-matrix/index.js'
-import { Shape } from './Shape.js';
-import { VAO } from './VAO.js';
-import * as vaos from './VAOManager.js';
+import  { Shape } from './Shape.js';
 
 class ShapeGenerator {
 
@@ -72,16 +70,14 @@ class ShapeGenerator {
             ])
         }
 
-        const index = vaos.VAO_BOUNDINGBOX;
-        const vao = new VAO(
-            vertices.flat(),
-            null,
+        return new Shape(
+            vertices,
+            normals,
             indices,
-            null
+            colors,
+            glm.mat4.create()
         );
-
-        vaoManager.addVAO(vao, index);
-        return new Shape(vaoManager, index);
+    }
 }
 
 export { ShapeGenerator };
